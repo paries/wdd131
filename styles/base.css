@@ -6,8 +6,8 @@
 
 :root {
     --body-background-color: #F5EFE6;
-    --title-background-color: #C2653A;
-    --section-title-background-color: #C2653A;
+    --title-background-color: #8f4a2b;
+    --section-title-background-color: #8f4a2b;
     --nav-background-color: #3A2E2A;
     --background-color-lightgray: #efefef;
     --border-color: #3A2E2A;
@@ -24,7 +24,8 @@ body {
     background-color: var(--body-background-color);
 }
 
-/* for some reason the wdd_audid does not like this grouped with the others */
+/* for some reason the wdd_audid does not like this grouped with the others, 
+so i had to seperate it from footer and main */
 header {
     max-width: 840px;
         margin: 0 auto;
@@ -52,6 +53,7 @@ main {
 
 header span {
     display: block;
+    font-weight: 400;
     background-color: var(--title-background-color);
     color: var(--title-color);
     padding: 15px;
