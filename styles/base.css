@@ -5,18 +5,18 @@
 }
 
 :root {
-    --body-background-color:#F5EFE6;
+    --body-background-color: #F5EFE6;
     --title-background-color: #C2653A;
     --section-title-background-color: #C2653A;
     --nav-background-color: #3A2E2A;
     --background-color-lightgray: #efefef;
-    --border-color:#3A2E2A;
-    --h1-color:#7D8C6A;
+    --border-color: #3A2E2A;
+    --h1-color: #7D8C6A;
     --block-padding: 20px;
     --title-color: #F5EFE6;
 }
 
-body{
+body {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -26,8 +26,7 @@ body{
 
 header,
 footer,
-main
-{
+main {
     max-width: 840px;
     margin: 0 auto;
     font-family: "Fraunces", serif;
@@ -43,7 +42,7 @@ header span {
     display: block;
     background-color: var(--title-background-color);
     color: var(--title-color);
-    padding:15px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -56,7 +55,7 @@ h1 {
 
 nav {
     background-color: var(--nav-background-color);
-    padding: 5x;
+    padding: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -82,7 +81,7 @@ main {
     gap: 16px;
 }
 
-.card{
+.card {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     text-align: center;
@@ -90,11 +89,11 @@ main {
     font-size: .9em;
 }
 
-.card a{
+.card a {
     color: var(--nav-background-color);
 }
 
-.card img{
+.card img {
     width: 150px;
     height: auto;
     border: 1px solid var(--nav-background-color);
@@ -108,7 +107,7 @@ main {
     text-align: center;
 }
 
-.left-card{
+.left-card {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -117,18 +116,18 @@ main {
     float: right;
 }
 
-.my-place{
-    float: left; 
+.my-place {
+    float: left;
 }
 
-.card h2{
+.card h2 {
     background-color: var(--section-title-background-color);
     color: var(--title-color);
     text-align: center;
     font-weight: 400;
     font-size: .9em;
-    padding:10px;
-    border-radius: 10px 10px 0 0 ;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .card ul {
@@ -136,15 +135,17 @@ main {
     padding: 10px;
     text-align: left;
 }
+
 .card li {
     padding: 5px;
 }
+
 .card p {
     padding: 5px;
     text-align: left;
 }
 
-.card h3{
+.card h3 {
     padding: 2px;
     border-bottom: 1px solid var(--nav-background-color);
     margin: 5px 20px;
@@ -159,6 +160,6 @@ footer {
     color: var(--title-color);
 }
 
-#lastModified{
+#lastModified {
     font-size: .8em;
 }
