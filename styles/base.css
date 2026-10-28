@@ -24,6 +24,11 @@ body {
     background-color: var(--body-background-color);
 }
 
+/* for some reason the wdd_audid does not like this grouped with the others */
+header {
+    margin: 0 auto;
+}
+
 header,
 footer,
 main {
