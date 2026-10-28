@@ -11,9 +11,9 @@
     --nav-background-color: #3A2E2A;
     --background-color-lightgray: #efefef;
     --border-color: #3A2E2A;
-    --h1-color: #7D8C6A;
+    --h1-color: #3A2E2A;
     --block-padding: 20px;
-    --title-color: #F5EFE6;
+    --title-color: #fff;
 }
 
 body {
@@ -26,10 +26,17 @@ body {
 
 /* for some reason the wdd_audid does not like this grouped with the others */
 header {
-    margin: 0 auto;
+    max-width: 840px;
+        margin: 0 auto;
+        font-family: "Fraunces", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+            "SOFT" 0,
+            "WONK" 1;
 }
 
-header,
 footer,
 main {
     max-width: 840px;
