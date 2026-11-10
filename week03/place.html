@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 Assignment: Country Page</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Randy Paries, W03 Assignment: Country Page">
+    <meta name="author" content="Randy Paries">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+</head>
+
+<body>
+    <header>
+        <h1>Mount Kidd, Kananaskis Country Alberta</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large-mtkidd800.webp" media="(max-width: 800px)">
+                <source srcset="images/hero-large-mtkidd500.webp" media="(max-width: 500px)">
+                <img src="images/hero-large-mtkiddrev.webp" alt="Mount Kidd, Kananaskis Country Alberta" height="574"
+                    width="1020">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Location:</th>
+                        <td>Alberta, Canada</td>
+                    </tr>
+                    <tr>
+                        <th>Range:</th>
+                        <td>Kananaskis Range</td>
+                    </tr>
+                    <tr>
+                        <th>Park:</th>
+                        <td>Spray Valley Provincial Park</td>
+                    </tr>
+                    <tr>
+                        <th>Geology:</th>
+                        <td>Rock is Cambrian</td>
+                    </tr>
+                    <tr>
+                        <th>Campsite:</th>
+                        <td>Mount Kidd RV Park </td>
+                    </tr>
+                    <tr>
+                        <th>Sites:</th>
+                        <td>229</td>
+                    </tr>
+                    <tr>
+                        <th>Max stay:</th>
+                        <td>14 Nights</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td id="temp"></td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td id="wind"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="windchill"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#x1F3D4;&#xFE0F; Randy Paries &#x1F3D4;&#xFE0F; Mount Kidd</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
