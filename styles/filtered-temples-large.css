@@ -10,4 +10,16 @@
         display: block;
         flex: 1 1 100%;
     }
+
+    main #temple-cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .card {
+        width: 350px;
+        height: 300px;
+    }
+    .card figure img {
+        width: 250px;
+    }
 }
