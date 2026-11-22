@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-footer-bg-color: #1C1C24;
+    --body-background-color: #FFF8EF;
+    --section-background-color: #FFF8EF;
+    --buttons-background-color: #F7941D;
+    --buttons-background-color-hover: #F9D71C;
+    --default-font-color: #33333B;
+    --default-header-font-color: #FFF;
+}
+
+body {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--body-background-color);
+    color: var(--default-font-color);
+    font-size: 14px;;
+}
+
+header {
+    background-color: var(--header-footer-bg-color);
+    color: var(--default-header-font-color);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+footer {
+    text-align: center;
+    background-color: var(--header-footer-bg-color);
+    color: var(--default-header-font-color);
+}
+
+.logo{
+    padding: 10px;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+.header-title{
+    padding-top: 30px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.header-title p{
+    font-weight: 300;
+}
+
+main{
+    max-width: 840px;
+}
+
+section{
+    padding: 10px 40px;
+}
+
+section h2{
+    color: var(--header-footer-bg-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;   
+ }
+
+ .colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+ }
+
+ .colors div{
+    margin:10px;
+    height: 70px;
+    border: 1px solid #000;
+    border-radius: 5px 5px 5px 5px;
+    font-size: .8em;
+}
+
+ .colors p{
+    padding:5px;
+    margin-top: 30px;
+    height: 35px;
+ }
+
+.colors .color-header {
+   background-color: var(--header-footer-bg-color);
+}
+.colors .color-page {
+    background-color: var(--body-background-color);
+}
+
+.colors .color-buttons {
+    background-color: var(--buttons-background-color);
+}
+
+.colors .color-text {
+    background-color: var(--default-font-color);
+}
+
+.colors p{
+    background-color: #fff;
+}
+
+.scenarios ul{
+    margin-left: 15px;
+}
+
+
+.typography div {
+    margin: 10px 0;
+}
+
+ .typography h3 {
+    color: var(--header-footer-bg-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.typography .poppins{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.typography .atkinson {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wireframes img{
+    width: 400px;
+}
+
+.wireframes .mobile img{
+    width: 200px;
+}
+
