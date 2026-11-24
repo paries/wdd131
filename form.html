@@ -20,7 +20,7 @@
                     Product Name <span class="required">*</span>
                 </label>
                 <select name="product" id="product" required>
-                    <option value="" selected disabled hidden>Choose a Product....</option>
+                    <option value="" selected disabled hidden>Select a Product ...</option>
                 </select>
 
                 <div class="rating-container">
@@ -48,12 +48,13 @@
                 <label><input type="checkbox" name="easeOfUse" value="yes">Ease of Use</label>
                 <label><input type="checkbox" name="performance" value="yes">Performance</label>
                 <label><input type="checkbox" name="design" value="yes">Design</label>
-
-                <div class="written">Written Review <span>(Optional)</span></div>
-                <textarea name="review"></textarea>
+                <div class="review-container">
+                    <label for="review">Written Review <span>(Optional)</span></label>
+                    <textarea id="review" name="review"></textarea>
+                </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset >
                 <label for="reviewer">Your Name <span>(Optional)</span></label><input id="reviewer" type="text" > 
             </fieldset>
 
