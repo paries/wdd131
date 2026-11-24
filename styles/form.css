@@ -129,13 +129,6 @@ label {
     content: '\2605';
 }
 
-@-moz-document url-prefix() {
-    .overall-rating input:checked~label:before {
-        font-size: 36px;
-        line-height: 21px;
-    }
-}
-
 input[type="date"], input[type="text"], input[type="submit"]{
     padding: .75rem ;
     border-radius: 6px;
