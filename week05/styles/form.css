@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Acme, Arial, sans-serif;
+    margin: 10px;;
+}
+
+header,
+footer,
+main {
+    min-width: 400px;
+    max-width: 840px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main,
+footer {
+    /* width: 400px; */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main h1 {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 5px;
+    margin-bottom: 10px;
+    ;
+}
+
+form {
+    background-color: #efefef;
+    text-align: center;
+}
+
+fieldset {
+    margin: 10px ;
+    padding: 10px;
+    border: 1px solid #ddd9d9;
+    text-align: left;
+}
+
+fieldset .checknote{
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+fieldset .written{
+    margin-top: 10px;
+}
+
+fieldset  span{
+    font-size: .9em;
+    color: darkblue;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+.required{
+    color: red;
+}
+
+.rating-container{
+    margin-top: 20px;
+}
+.rating-container div{
+    text-align: center;
+}
+.overall-rating {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 5px auto;
+    position: relative;
+}
+
+.overall-rating input {
+    display: none;
+}
+
+.overall-rating>label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+}
+
+.overall-rating label:hover {
+    color: #ff69b4;
+    transition: 0.2s ease;
+}
+
+.overall-rating label:active::before {
+    transform: scale(1.1);
+}
+
+.overall-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+.overall-rating input:checked~label:before {
+    content: '\2605';
+}
+
+@-moz-document url-prefix() {
+    .overall-rating input:checked~label:before {
+        font-size: 36px;
+        line-height: 21px;
+    }
+}
+
+input[type="date"], input[type="text"], input[type="submit"]{
+    padding: .75rem ;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+
+.submit-container {
+    border: 0;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea{
+    padding: .75rem;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+form select {
+    font-size: 1.1rem;
+    padding: .75rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+footer {
+    background-color: #111;
+    font-weight: 400;
+    font-size: .8em;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+    header,
+    footer,
+    main {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
